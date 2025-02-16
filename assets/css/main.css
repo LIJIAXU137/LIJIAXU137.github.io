@@ -9320,3 +9320,44 @@ h1:before,.anchor:before {
     background-color: #00369f;
     font-size: .8em
 }
+
+dl dt img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 添加以下CSS样式 */
+dl {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    dl {
+        grid-template-columns: 400px 1fr;
+        align-items: start;
+    }
+}
+
+dl dt {
+    margin: 0;
+    padding: 0;
+}
+
+dl dt img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    box-shadow: 3px 3px 6px #888;
+}
+
+dl dd {
+    margin: 0;
+    padding: 0;
+}
